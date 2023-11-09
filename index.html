@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <script src="/JS/script.js"></script>
+    <header><h1>Calculadora - Ravel's</h1></header>
+
+    <main id="container">
+      <div class="container_calc">
+        <div class="type_it">
+          <div class="result">
+            <p class="result_icon">=</p>
+            <p class="result_right directionD"></p>
+          </div>
+        </div>
+        <table>
+          <tr>
+            <td>
+              <button onclick="clean()"><span>CE</span></button>
+            </td>
+            <td><button onclick="eraseBack()">C</button></td>
+            <td><button onclick="insert('%')">%</button></td>
+            <td><button onclick="insert('/')" class="span">/</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('7')">7</button></td>
+            <td><button onclick="insert('8')">8</button></td>
+            <td><button onclick="insert('9')">9</button></td>
+            <td><button onclick="insert('*')" class="span">X</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('4')">4</button></td>
+            <td><button onclick="insert('5')">5</button></td>
+            <td><button onclick="insert('6')">6</button></td>
+            <td><button onclick="insert('-')" class="span">-</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('1')">1</button></td>
+            <td><button onclick="insert('2')">2</button></td>
+            <td><button onclick="insert('3')">3</button></td>
+            <td><button onclick="insert('+')" class="span">+</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('0')">0</button></td>
+            <td><button onclick="insert('.')">.</button></td>
+            <td colspan="2">
+              <button
+                onclick="submit()"
+                class="span"
+                style="width: 87px; border-radius: 20px">
+                =
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <script src="assets/JS/script.js"></script>
+  </body>
+</html>
